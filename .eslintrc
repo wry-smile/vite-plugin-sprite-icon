@@ -1,0 +1,3 @@
+{
+  "extends": ["@wry-smile/eslint-config-vue"]
+}

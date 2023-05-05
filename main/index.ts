@@ -1,0 +1,1 @@
+export { spriteIcon } from './main'
