@@ -16,9 +16,9 @@ export const VIRTUAL_MODULE_ID = 'virtual:sprite-icon-module'
 export const RESOLVED_VIRTUAL_MODULE_ID = `\0${VIRTUAL_MODULE_ID}`
 
 export const DEFAULT_OPTIONS: UserOptions = {
-  output: '/src/assets/sprite-icon',
+  output: 'src/assets/sprite-icon',
   glyphsName: true,
-  autoInject: true,
+  virtualModule: true,
   symbolId: (name: string) => `sprite-${name}`,
   delete: true,
   spriteFileName: SPRITE_ICON_FILE_NAME,

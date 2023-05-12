@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { icon1, icon2 } from './assets/test/icons.json'
+import { icon1, icon2 } from './assets/sprite-icon/icons.json'
 </script>
 
 <template>

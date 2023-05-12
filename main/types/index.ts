@@ -13,9 +13,9 @@ export interface UserOptions {
   output?: string
 
   /**
-   * @description Automactically Inject Into Index.html.
+   * @description Usage Visual Module.
    */
-  autoInject?: boolean
+  virtualModule?: boolean
 
   /**
    * @description Svg File To JSON File.

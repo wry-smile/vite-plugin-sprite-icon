@@ -38,8 +38,8 @@ const mkFolderSync = (path: string) => {
 }
 
 const rmFolderSync = (path: string) => {
+  if (!existsSync(path)) return
   const files = readdirSync(path)
-
   for (const fileName of files) {
     const filePath = join(path, fileName)
     const state = statSync(filePath)
@@ -197,6 +197,11 @@ const genSpriteIconsFile = (parseSvgList: ParseSvgType[], options: UserOptions) 
 export const analysisSvg = (options: UserOptions, _userConfig: UserConfig) => {
   let { entry } = options
 
+  if (!entry || (isArray(entry) && !entry.length)) {
+    error('An \'entry\' Field Is Required !')
+    return
+  }
+
   const { output, delete: deleteFolder } = options
 
   const dirPath = resolve(cwd(), output!)
@@ -217,7 +222,7 @@ export const analysisSvg = (options: UserOptions, _userConfig: UserConfig) => {
 
   genGlyphsNameFile(svgNameList, options)
 
-  const visualModule = genSpriteIconsFile(parseList, options)
+  const virtualModuleContent = genSpriteIconsFile(parseList, options)
 
-  return { visualModule }
+  return { virtualModuleContent }
 }
