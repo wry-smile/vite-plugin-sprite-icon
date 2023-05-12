@@ -13,7 +13,9 @@
     }
   },
   "scripts": {
-    "dev": "tsup --watch",
+    "dev": "pnpm build && pnpm playground",
+    "dev:watch": "tsup --watch",
+    "playground": "cd ./playground/vue3 && pnpm dev",
     "build": "tsup"
   },
   "dependencies": {

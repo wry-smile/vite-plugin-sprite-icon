@@ -4,5 +4,6 @@
     "rgrove",
     "tsup",
     "unplugin"
-  ]
+  ],
+  "svg.preview.background": "transparent"
 }

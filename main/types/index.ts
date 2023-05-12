@@ -31,5 +31,16 @@ export interface UserOptions {
    * @description symbol
    * @returns string
    */
-  symbolId?: () => string
+  symbolId?: (name: string) => string
+
+  /**
+   * @description Genreate Sprite Icon File Name
+   * @default sprite.icon
+   */
+  spriteFileName?: string
+
+  /**
+   * @description Delete Old Output Folder
+   */
+  delete?: boolean
 }
