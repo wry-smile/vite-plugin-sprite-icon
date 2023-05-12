@@ -52,7 +52,7 @@ const rmFolderSync = (path: string) => {
   rmdirSync(path)
 }
 
-const removeNewLineChatCode = (string: string) => string.replace(/\n/g, '')
+const removeNewLineChatCode = (string: string) => string.replace(/\n/g, '').replace(/\s+/g, ' ')
 
 const getAllSvgName = (entry: string[]): SvgNameListType[] => {
   const svgNameList: SvgNameListType[] = []

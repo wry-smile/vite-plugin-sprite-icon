@@ -22,7 +22,7 @@ export const spriteIcon = (options: UserOptions) => {
     },
     load(id) {
       if (virtualModule && id === RESOLVED_VIRTUAL_MODULE_ID && virtualModuleContent)
-        return virtualModule
+        return { code: virtualModuleContent }
     },
   } as Plugin
 }

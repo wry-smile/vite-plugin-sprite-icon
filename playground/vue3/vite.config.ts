@@ -10,7 +10,6 @@ export default defineConfig({
     vue(),
     spriteIcon({
       entry: resolve('./src/assets/icons'),
-      // virtualModule: false,
     }),
     inspest(),
   ],
