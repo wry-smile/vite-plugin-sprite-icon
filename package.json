@@ -1,7 +1,7 @@
 {
   "name": "@wry-smile/vite-plugin-sprite-icon",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1-beta.0",
   "description": "",
   "keywords": [],
   "license": "MIT",
@@ -12,7 +12,9 @@
       "types": "./dist/index.d.ts"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "pnpm build && pnpm playground",
     "dev:watch": "tsup --watch",
