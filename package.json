@@ -16,7 +16,8 @@
     "dev": "pnpm build && pnpm playground",
     "dev:watch": "tsup --watch",
     "playground": "cd ./playground/vue3 && pnpm dev",
-    "build": "tsup"
+    "build": "tsup",
+    "release": "releaseKit ./package.json"
   },
   "dependencies": {
     "@rgrove/parse-xml": "^4.1.0",
@@ -29,6 +30,7 @@
   },
   "devDependencies": {
     "@types/node": "^18.16.3",
+    "@wry-smile/release-kit": "^1.1.0",
     "vite": "^4.3.2"
   }
 }
