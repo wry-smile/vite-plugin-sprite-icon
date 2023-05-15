@@ -12,12 +12,13 @@
       "types": "./dist/index.d.ts"
     }
   },
+  "files": ["dist"],
   "scripts": {
     "dev": "pnpm build && pnpm playground",
     "dev:watch": "tsup --watch",
     "playground": "cd ./playground/vue3 && pnpm dev",
     "build": "tsup",
-    "release": "releaseKit ./package.json && npm publish --access=public"
+    "release": "pnpm build && releaseKit ./package.json && npm publish --access=public"
   },
   "dependencies": {
     "@rgrove/parse-xml": "^4.1.0",
