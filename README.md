@@ -23,7 +23,6 @@ export default defineConfig({
 
 ```
 
-
 ### Step 2
 
 ```ts
