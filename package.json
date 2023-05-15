@@ -17,7 +17,7 @@
     "dev:watch": "tsup --watch",
     "playground": "cd ./playground/vue3 && pnpm dev",
     "build": "tsup",
-    "release": "releaseKit ./package.json"
+    "release": "releaseKit ./package.json && npm publish --access=public"
   },
   "dependencies": {
     "@rgrove/parse-xml": "^4.1.0",
